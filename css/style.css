@@ -125,7 +125,7 @@ a:hover, a:active, a:focus {
 }
 
 #about, #work,
-#contact {
+#contact,#project {
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -140,11 +140,14 @@ a:hover, a:active, a:focus {
   border-bottom: 1px solid #f0f0f0;
 }
 
-#contact {
+#project {
   text-align: center;
 }
 
-
+#contact{
+  border-top: 1px solid #f0f0f0;
+  text-align: center;  
+}
 
 /*---------------------------------------
   Pre loader section              
@@ -406,14 +409,17 @@ a:hover, a:active, a:focus {
 #work .work-thumb img {
   border-radius: 2px;
 }
-
+#work .gallery{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
 
 
 /*---------------------------------------
-  Contact section              
+  project section              
 -----------------------------------------*/
 
-#contact .form-control {
+#project .form-control {
   border-radius: 0px;
   border-color: #f0f0f0;
   box-shadow: none;
@@ -424,17 +430,22 @@ a:hover, a:active, a:focus {
   transition: all ease-in-out 0.4s;
 }
 
-#contact .form-control:focus {
+#project .form-control:focus {
   border-bottom: 2px solid #999999;
 }
 
-#contact input {
+#project input {
   height: 55px;
   border: none;
   border-bottom: 1px solid #f0f0f0;
 }
-
-#contact button#submit {
+#project .project-popup{
+  display: block;
+  max-height: 150px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px #d7e4ed;
+}
+#project button#submit {
   background: #000000;
   border: none;
   border-radius: 50px;
@@ -445,7 +456,7 @@ a:hover, a:active, a:focus {
   margin-top: 24px;
 }
 
-#contact button#submit:hover {
+#project button#submit:hover {
   background: #d7b065;
   color: #ffffff;
 }
@@ -530,7 +541,7 @@ a:hover, a:active, a:focus {
     line-height: 1.4;
   }
 
-  h2  {font-size: 18px;line-height: inherit;}
+  h2  {font-size: 24px;line-height: inherit;}
 
   h4  {font-size: 16px;}
   .custom-navbar .navbar-brand{
@@ -613,13 +624,14 @@ Main components
   /* padding: 2em 0; */
   margin-top: 2em;
   margin-bottom: 2em;
+  width: 95%;
 }
 #cd-timeline::before {
   /* this is the vertical line */
   content: '';
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 0;
   height: 100%;
   width: 4px;
   background: #d7e4ed;
@@ -637,7 +649,7 @@ Main components
 
 .cd-timeline-block {
   position: relative;
-  margin: 2em 0;
+  margin: 1em 0;
 }
 .cd-timeline-block:after {
   content: "";
@@ -652,7 +664,7 @@ Main components
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-block {
-    margin: 4em 0;
+    margin: 1em 0;
   }
   .cd-timeline-block:first-child {
     margin-top: 0;
@@ -664,10 +676,10 @@ Main components
 
 .cd-timeline-img {
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: 12px;
+  left: -8px;
   width: 20px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   height: 20px;
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
@@ -696,6 +708,7 @@ Main components
     width: 20px;
     height: 20px;
     left: 50%;
+    top: 20px;
     margin-left: -10px;
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
@@ -714,7 +727,7 @@ Main components
 
 .cd-timeline-content {
   position: relative;
-  margin-left: 60px;
+  margin-left: 30px;
   background: white;
   border-radius: 0.25em;
   padding: 1em;
@@ -727,7 +740,25 @@ Main components
   clear: both;
 }
 .cd-timeline-content h2 {
+  font-size: 18px;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
   color: #303e49;
+}
+.cd-timeline-content h2 a{
+  font-size: 14px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 2px 0;
+    min-width: 90px;
+    text-align: center;
+    line-height: 1.2;
+}
+.cd-timeline-content h2 a .icon{
+  font-size: 12px;
+  margin-right: 5px;
+  color: #999;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 12px;
@@ -752,7 +783,7 @@ Main components
 }
 a.cd-read-more:hover{text-decoration:none; background-color: #424242;  }
 .cd-timeline-content .cd-date {
-  float: left;
+  float: right;
   /* padding: .8em 0; */
   opacity: .7;
 }
@@ -781,6 +812,7 @@ a.cd-read-more:hover{text-decoration:none; background-color: #424242;  }
   .cd-timeline-content {
     margin-left: 0;
     width: 48%;
+    padding: 0 1em;
   }
   .cd-timeline-content::before {
     top: 24px;
@@ -798,6 +830,7 @@ a.cd-read-more:hover{text-decoration:none; background-color: #424242;  }
     top: 20px;
     font-size: 16px;
     text-align: left;
+    float: left;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
