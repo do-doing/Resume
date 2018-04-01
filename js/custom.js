@@ -2,11 +2,15 @@
 
   "use strict";
 
-  $("img.lazy").lazyload({ effect: "fadeIn" });
+  $("img.lazy").lazyload({ 
+    placeholder: "images/loading.gif",
+    effect: "fadeIn" ,
+    threshold: 200,
+  });
 
   // PRE loader
   $(window).load(function () {
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+    $('.preloader').fadeOut(100); // set duration in brackets    
   });
 
 
