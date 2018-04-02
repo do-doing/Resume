@@ -25,6 +25,11 @@
     } else {
       $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+    if ($(".navbar").offset().top > $(window).height()){
+      $(".contact").show();
+    }else{
+      $(".contact").hide();
+    }
   });
 
 
@@ -45,13 +50,7 @@
 
   //定义画布宽高和生成点的个数
   var WIDTH = window.outerWidth, HEIGHT = window.outerHeight, POINT
-  if (window.outerWidth > 768) {
-    POINT = 35;
-  } else {
-    POINT = 10;
-  }
-
-
+  POINT = window.outerWidth > 768?35:10
   var canvas = document.getElementById('Mycanvas');
   canvas.width = WIDTH,
     canvas.height = HEIGHT;
