@@ -165,6 +165,7 @@ a:hover, a:active, a:focus {
 }
 .contact{
   display: none;
+  padding: 0 0 100px;
 }
 .qr-link{
   display: inline-block;

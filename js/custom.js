@@ -20,6 +20,7 @@
   });
 
   $(window).scroll(function () {
+    $(".navbar-collapse.in").removeClass('in');
     if ($(".navbar").offset().top >10) {
       $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
