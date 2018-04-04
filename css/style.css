@@ -6,7 +6,7 @@ body {
 body,section{
   position: relative;
   z-index: 2;
-  background: #fbfbfb;
+  background: #fdfdfd;
 }
 /* 
 html, body {
@@ -167,6 +167,11 @@ a:hover, a:active, a:focus {
   display: none;
   padding: 0 0 100px;
 }
+.contact h2{
+  font-size: .5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
 .qr-link{
   display: inline-block;
   position: relative;
@@ -279,7 +284,10 @@ a:hover, a:active, a:focus {
   padding: 0;
   margin: .15rem;
 }
-
+.custom-navbar .navbar-nav{
+  background: #fcfcfc;
+  border-top:1px solid #f0f0f0;
+}
 .custom-navbar .navbar-nav > li > a:hover,
 .custom-navbar .navbar-nav > li > a:focus {
   background-color: transparent;
@@ -331,7 +339,7 @@ a:hover, a:active, a:focus {
       background: 0 0; 
     } */
     .custom-navbar.top-nav-collapse {
-      background: #fbfbfb;
+      background: #fdfdfd;
       box-shadow: 0 40px 50px rgba(0,0,0,.15);
       padding: 10px 0;
     }
@@ -364,7 +372,9 @@ a:hover, a:active, a:focus {
   height: 120px;
   margin: 0 auto;
 }
-
+#home .fa-ul{
+  margin-left: .25rem;
+}
 
 /*---------------------------------------
   About section              
@@ -597,11 +607,12 @@ a:hover, a:active, a:focus {
     width: 30px;
   }
   .custom-navbar {
-    background-color: #ffffff;
-    box-shadow: 0 20px 25px rgba(0,0,0,.05);
     padding: 5px;
   }
-
+  .custom-navbar.top-nav-collapse{
+    background-color: #fdfdfd;
+    box-shadow: 0 20px 25px rgba(0,0,0,.05);
+  }
   .custom-navbar .nav {
     padding-bottom: 10px;
   }
