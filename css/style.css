@@ -284,10 +284,7 @@ a:hover, a:active, a:focus {
   padding: 0;
   margin: .15rem;
 }
-.custom-navbar .navbar-nav{
-  background: #fcfcfc;
-  border-top:1px solid #f0f0f0;
-}
+
 .custom-navbar .navbar-nav > li > a:hover,
 .custom-navbar .navbar-nav > li > a:focus {
   background-color: transparent;
@@ -502,8 +499,9 @@ a:hover, a:active, a:focus {
   border-bottom: 1px solid #f0f0f0;
 }
 #project .project-popup{
-  display: block;
-  max-height: 150px;
+  display: flex;
+  align-items: center;
+  max-height: 175px;
   overflow: hidden;
   box-shadow: 0 4px 10px #d7e4ed;
 }
@@ -603,6 +601,10 @@ a:hover, a:active, a:focus {
     padding: 4px;
     font-size: 16px;
   }
+  .custom-navbar .navbar-nav{
+    background: #fcfcfc;
+    border-top: 1px solid #f0f0f0;
+  }
   .custom-navbar .navbar-brand img{
     width: 30px;
   }
@@ -613,10 +615,6 @@ a:hover, a:active, a:focus {
     background-color: #fdfdfd;
     box-shadow: 0 20px 25px rgba(0,0,0,.05);
   }
-  .custom-navbar .nav {
-    padding-bottom: 10px;
-  }
-
   .custom-navbar .nav li a {
     display: inline-block;
     margin-bottom: 5px;
@@ -714,7 +712,7 @@ Main components
   height: .2rem;
   background: #accee6;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 0.04rem white, inset 0 0.02rem 0 rgba(0, 0, 0, 0.08), 0 0.03rem 0 0.04rem rgba(0, 0, 0, 0.05);
 }
 /* .cd-timeline-img img {
   display: block;
