@@ -26,7 +26,7 @@
     } else {
       $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
-    if ($(".navbar").offset().top > $(window).height()){
+    if ($(".navbar").offset().top > $(window).height()*2){
       $(".contact").show();
     }else{
       $(".contact").hide();
@@ -36,7 +36,7 @@
 
   // Smoothscroll js
   $(function () {
-    $('.custom-navbar a, #home a').bind('click', function (event) {
+    $('.custom-navbar a').bind('click', function (event) {
       var $anchor = $(this);
       $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top - 49

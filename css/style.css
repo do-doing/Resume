@@ -501,6 +501,7 @@ a:hover, a:active, a:focus {
 #project .project-popup{
   display: flex;
   align-items: center;
+  justify-content: center;
   max-height: 175px;
   overflow: hidden;
   box-shadow: 0 4px 10px #d7e4ed;
@@ -567,7 +568,7 @@ a:hover, a:active, a:focus {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #home {
-    height: 60vh;
+    height: 80vh;
   }
 }
 
@@ -593,34 +594,7 @@ a:hover, a:active, a:focus {
 } */
 
 
-@media (max-width: 768px) {
-  html{
-    font-size: 85px;
-  }
-  .custom-navbar .navbar-brand{
-    padding: 4px;
-    font-size: 16px;
-  }
-  .custom-navbar .navbar-nav{
-    background: #fcfcfc;
-    border-top: 1px solid #f0f0f0;
-  }
-  .custom-navbar .navbar-brand img{
-    width: 30px;
-  }
-  .custom-navbar {
-    padding: 5px;
-  }
-  .custom-navbar.top-nav-collapse{
-    background-color: #fdfdfd;
-    box-shadow: 0 20px 25px rgba(0,0,0,.05);
-  }
-  .custom-navbar .nav li a {
-    display: inline-block;
-    margin-bottom: 5px;
-  }
 
-}
 
 
 
@@ -894,9 +868,43 @@ a.cd-read-more:hover{text-decoration:none; background-color: #424242;  }
     font-size: 100px;
   }
 }
+@media (max-width:1024px){
+  html{
+    font-size: 90px;
+  }
+}
+@media (max-width: 768px) {
+  html{
+    font-size: 85px;
+  }
+  .custom-navbar .navbar-brand{
+    padding: 4px;
+    font-size: 16px;
+  }
+
+  .custom-navbar .navbar-brand img{
+    width: 30px;
+  }
+  .custom-navbar {
+    padding: 5px;
+  }
+  .custom-navbar.top-nav-collapse{
+    background-color: #fdfdfd;
+    box-shadow: 0 20px 25px rgba(0,0,0,.05);
+  }
+  .custom-navbar .nav li a {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+}
 @media (max-width: 580px) {
   html{
     font-size: 75px;
+  }
+  .custom-navbar .navbar-nav{
+    background: #fcfcfc;
+    border-top: 1px solid #f0f0f0;
   }
   #about .about-thumb {
     margin-top: 0px;
