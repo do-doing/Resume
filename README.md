@@ -1,4 +1,4 @@
-# 个人简历
+# 个人简历 https://do-doing.github.io/Resume/
 ![1](https://github.com/do-doing/Resume/blob/master/Resume_jpg/Resume_1.jpg)
 ![2](https://github.com/do-doing/Resume/blob/master/Resume_jpg/Resume_2.jpg)
 ![3](https://github.com/do-doing/Resume/blob/master/Resume_jpg/Resume_3.jpg)
