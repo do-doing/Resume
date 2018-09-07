@@ -176,7 +176,7 @@ a:hover, a:active, a:focus {
   display: inline-block;
   position: relative;
 }
-.qr-link:hover .qr-box{
+.qr-link>a:hover+.qr-box{
   opacity: 1;
   margin-top: 5px;
 }
